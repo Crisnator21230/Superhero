@@ -1,0 +1,59 @@
+###
+POST http://localhost:5000/api/v1/people/person HTTP/1.1
+Content-Type: application/json
+
+{
+  "name":"Sandra",
+  "lastname":"Albarracin",
+  "dni":"999",
+  "address":[{
+    "city":"Manizales",
+    "code_zip":172,
+    "geo":[-6.1,8.2]
+  }]
+}
+###
+GET http://localhost:5000/api/v1/people HTTP/1.1
+###
+GET http://localhost:5000/api/v1/people/623d2998da15a244166ae341 HTTP/1.1
+###
+PUT http://localhost:5000/api/v1/people/623d2998da15a244166ae341 HTTP/1.1
+Content-Type: application/json
+
+{
+  "address":[{
+    "city":"Medellin",
+    "code_zip":555,
+    "geo":[-6.1,8.2]
+  }]
+}
+###
+DELETE http://localhost:5000/api/v1/people/623d2998da15a244166ae341 HTTP/1.1
+
+
+
+
+###
+POST http://localhost:5000/api/v1/superheroes_v2/superhero HTTP/1.1
+Content-Type: application/json
+
+{
+  "superhero":"Superman",
+  "realname":"Super men",
+  "superpower":"Be invisible"
+}
+###
+GET http://localhost:5000/api/v1/superheroes_v2 HTTP/1.1
+
+###
+GET http://localhost:5000/api/v1/superheroes_v2/623bad7d4832b5d68567761b HTTP/1.1
+
+###
+PUT http://localhost:5000/api/v1/superheroes_v2/623bad7d4832b5d68567761b HTTP/1.1
+Content-Type: application/json
+
+{
+  "realname":"Henry Allen"
+}
+###
+DELETE http://localhost:5000/api/v1/superheroes_v2/623bad7d4832b5d68567761b HTTP/1.1
