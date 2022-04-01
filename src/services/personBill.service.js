@@ -2,9 +2,7 @@ const personBillRouter = require('../routes/peopleBill.router')
 const personBillModel = require('../models/personBillModel')
 
 class PersonBillService{
-  //Promesas y funciones asincronicas
-  //Una funcion asincronica devuelve una promesa
-  //Js es un lenguaje ejecuta un hilo -> solo hace una cosa a la vez
+
   async createpersonBill(personBill){
     personBill.save();
     return personBill;

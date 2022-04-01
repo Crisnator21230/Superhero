@@ -2,9 +2,7 @@ const SuperheroRoute = require('../routes/superhero_v2.router')
 const SuperheroModel = require('../models/superhero_v2.model')
 
 class SuperheroService{
-  //Promesas y funciones asincronicas
-  //Una funcion asincronica devuelve una promesa
-  //Js es un lenguaje ejecuta un hilo -> solo hace una cosa a la vez
+
   async createSuperhero(superheroV2){
     superheroV2.save();
     return superheroV2;

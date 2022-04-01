@@ -47,9 +47,3 @@ superheroV2Router.delete('/:superheroId', async (req, res) => {
 
 module.exports = superheroV2Router;
 
-//JSON status code
-//200: lists, put, delete
-//201: create
-//302: found
-//304: Not modified
-//404: Not found
